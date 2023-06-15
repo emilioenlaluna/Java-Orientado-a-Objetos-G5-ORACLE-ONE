@@ -1,0 +1,14 @@
+package app010;
+
+public class AppMain {
+
+	public static void main(String[] args) {
+	System.out.print("Hola mundo");	
+	int edad =28;
+	System.out.println("edad"+edad);
+	edad=48;
+	System.out.println("edad"+edad);
+	edad=48+98;
+	System.out.println("edad"+edad);
+	}
+}

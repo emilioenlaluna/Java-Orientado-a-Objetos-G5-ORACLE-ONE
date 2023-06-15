@@ -1,0 +1,9 @@
+package Cuenta;
+
+public class Metodos {
+	public static void main(String[] args) {
+		Cuenta cuenta = new Cuenta();
+		cuenta.Saldo=300;
+		cuenta.Depositar(100);
+	}
+}

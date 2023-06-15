@@ -1,0 +1,11 @@
+package app010;
+
+public class Caracter {
+	public static void main(String[] args) {
+		
+		char caracter = 'a';
+		System.out.print("Letra"+caracter);
+		caracter=48;
+		System.out.print("ASCII"+caracter);
+	}
+}

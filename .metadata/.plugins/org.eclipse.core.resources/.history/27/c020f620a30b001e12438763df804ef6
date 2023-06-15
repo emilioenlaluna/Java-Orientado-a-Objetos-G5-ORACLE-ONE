@@ -1,0 +1,14 @@
+package Cuenta;
+
+public class TestCuenta {
+	public static void main(String[] args) {
+		Cuenta primeracuenta=new Cuenta();
+		primeracuenta.Agencia=7;
+		primeracuenta.Nombre="Cesar M";
+		primeracuenta.Saldo=7833.5;
+		Cuenta segundacuenta=new Cuenta();
+		segundacuenta=primeracuenta;
+		System.out.println(primeracuenta.Nombre);
+		System.out.println(segundacuenta.Nombre);
+	}
+}

@@ -1,0 +1,12 @@
+package Cuenta;
+
+public class Cuenta {
+	double Saldo=0;
+	int Agencia;
+	int Numero;
+	String Nombre;
+	
+	void Depositar(double Cantidad) {
+		saldo=saldo+Cantidad;
+	}
+}

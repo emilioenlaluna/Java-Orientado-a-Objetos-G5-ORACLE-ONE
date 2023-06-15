@@ -1,0 +1,13 @@
+package app010;
+
+public class Condiciones {
+public static void main(String[] args) {
+	System.out.println();
+	int edad=28;
+	if(edad>=18) {
+		System.out.println("Mayor");
+	}else {
+		System.out.println("No puede entrar");
+	}
+}
+}

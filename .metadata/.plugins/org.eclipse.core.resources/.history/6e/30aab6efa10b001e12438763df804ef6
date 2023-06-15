@@ -1,0 +1,8 @@
+package Cuenta;
+
+public class CrearCuenta {
+	public static void main(String[] args) {
+		Cuenta objeto=new Cuenta();
+		objeto.Saldo=1000;
+	}
+}

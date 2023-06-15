@@ -1,0 +1,8 @@
+package Cuenta;
+
+public class Cuenta {
+	double Saldo=0;
+	int Agencia;
+	int Numero;
+	String Nombre;
+}
