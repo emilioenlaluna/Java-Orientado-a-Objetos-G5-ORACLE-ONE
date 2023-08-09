@@ -1,0 +1,122 @@
+
+public class Principal {
+
+    public static void main(String[] args) { 
+        System.out.println("MAIN BEGIN"); 
+        m1();
+        System.out.println("MAIN END");
+    }
+
+    public static void m1() { 
+        System.out.println("B BEGIN"); 
+        m2();
+        System.out.println("B END");
+    }
+
+    public static void m2() {
+        System.out.println("A BEGIN");
+        System.out.println("A END");
+    }
+
+}
+
+
+
+
+
+
+
+ private static void metodo1() {
+        System.out.println("Inicio de metodo1");
+        try {
+            metodo2();
+        } catch(ArithmeticException ex) {
+            System.out.println("ArithmeticException");
+        }
+        System.out.println("Fin de metodo1");
+    }
+
+
+
+
+
+
+
+
+private static void metodo2() {
+    System.out.println("Inicio del metodo2"); 
+    ArithmeticException exception = new ArithmeticException();
+    throw exception;
+}
+
+ArithmeticException exception = new ArithmeticException(); throw exception;
+
+
+private static void metodo2() {
+        System.out.println("Inicio del metodo2");
+        throw new ArithmeticException("Surgió un error");
+}
+
+
+public class StockInsuficienteException extends Exception {
+
+    public StockInsuficienteException (String msg) {
+        super(msg);
+    }
+
+} 
+
+
+
+public class StockInsuficienteException extends Exception {
+
+    public StockInsuficienteException (String msg) {
+        super(msg);
+    }
+
+}
+
+public void RealizaCompra(Producto producto) throws StockInsuficienteException {
+    //otras instrucciones aquí..
+    if (totalDeProdutosEnStock < 0) {
+        throw new StockInsuficienteException("Stock insuficiente"); 
+    }
+}
+
+
+
+
+
+0000000000000000000000000000000000
+
+public class MiExcepcion extends RuntimeException {
+        public MiExcepcion (String msg) {
+            super(msg);
+        }
+}
+throw new MiExcepcion("Surgió un error");
+try {
+        metodo1();
+} catch(ArithmeticException | NullPointerException | MiExcepcion ex) {
+        String msg = ex.getMessage();
+
+        System.out.println("Exception " + msg);
+        ex.printStackTrace();
+}
+-------------------------
+
+public class MiExcepcion extends Exception {  //checked
+
+}
+
+private static void metodo1() throws MiExcepcion {
+    System.out.println("Inicio del metodo1");
+    metodo2();
+    System.out.println("Fin del metodo1");
+}
+
+private static void metodo2() throws MiExcepcion {
+    System.out.println("Inicio del metodo2");
+    throw new MiExcepcion ("Surgió un error");
+    // System.out.println("Fin del metodo2");            
+}
